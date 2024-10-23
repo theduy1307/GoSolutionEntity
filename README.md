@@ -1,8 +1,18 @@
-# Awesome GitHub Profile README Template Collection
+# GoSolution.Entities
 
-A collection of GitHub profile README's examples.
+## Introduction
 
-[Contributions](https://github.com/durgeshsamariya/awesome-github-profile-readme-templates/blob/master/CONTRIBUTING.md) are welcome. Read the [Guidelines](https://github.com/durgeshsamariya/awesome-github-profile-readme-templates/blob/master/CONTRIBUTING.md) on how to contribute.
-Feel free to add your or someone else's GitHub profile README file.
+**GoSolution.Entities** is a .NET Class Library package designed to provide entity models and data context for the GoSolution software. This library facilitates data management and interaction with the underlying database, making it easier to develop robust applications.
 
-Don't forget to hit the :star: if you like this repo.
+## Features
+
+- **Entity Models**: Contains classes that represent the database tables used in the GoSolution application.
+- **Data Context**: Provides a `DbContext` class to manage database connections and queries efficiently.
+- **Extensibility**: Easily extendable to accommodate new entities and customize data access methods.
+
+## Installation
+
+To install the **GoSolution.Entities** package, you can use the NuGet Package Manager or execute the following command in the Package Manager Console:
+
+```bash
+Install-Package GoSolution.Entities
