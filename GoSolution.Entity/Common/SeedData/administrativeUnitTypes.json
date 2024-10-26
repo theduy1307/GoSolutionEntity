@@ -1,0 +1,17 @@
+[
+  {
+    "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+    "Name": "Tỉnh/thành phố",
+    "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+  },
+  {
+    "Id": "5cf9939f-8dd5-41f1-9b46-c9c4c37312ea",
+    "Name": "Quận/huyện/thị xã/thành phố",
+    "Description": "Huyện hoặc quận của thành phố trực thuộc trung ương"
+  },
+  {
+    "Id": "3ac5eeb1-286d-437e-8d13-49bce5e10cd0",
+    "Name": "Phường/xã/thị trấn",
+    "Description": "Phường/xã/thị trấn"
+  }
+]

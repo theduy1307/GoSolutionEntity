@@ -1,8 +1,10 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace GoSolution.Entity.Entities;
 
-public class PoliticalQualification
+public class PoliticalQualification : EntityBase
 {
-    public Guid Id { get; set; }
+    [StringLength(100)]
     public string Name { get; set; } = string.Empty;
     public ICollection<Employee> Employees = new List<Employee>();
 }

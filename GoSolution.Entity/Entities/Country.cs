@@ -1,11 +1,14 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace GoSolution.Entity.Entities;
 
-public class Country
+public class Country : EntityBase
 {
-    public Guid Id { get; set; }
-    
     // ISO 3166-1 A-2
+    [StringLength(2)]
     public string IsoCode { get; set; } = string.Empty;
+    
+    [StringLength(100)]
     public string Name { get; set; } = string.Empty;
 
     public ICollection<AdministrativeUnitType> AdministrativeUnitTypes { get; set; } =

@@ -1,0 +1,884 @@
+[
+    {
+      "Id": "e914caed-5d07-42c7-960c-7d1003c4d10e",
+      "Name": "Thành phố Hà Nội",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "eb6efffe-0a25-4677-a411-50ba4a421e4e",
+      "Name": "Tỉnh Hà Giang",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "71e82952-a5a4-43df-bdd7-3eaf586823f6",
+      "Name": "Tỉnh Cao Bằng",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "cae31e22-182d-4308-b2c4-1f39d22ea1c2",
+      "Name": "Tỉnh Bắc Kạn",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "f6e91cb5-db7b-4b66-8142-d95068f3804c",
+      "Name": "Tỉnh Tuyên Quang",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "deb5b0cd-7129-49d9-8a13-93795b95fcf9",
+      "Name": "Tỉnh Lào Cai",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "ba54b527-04b5-4730-808b-8732d7356e1f",
+      "Name": "Tỉnh Điện Biên",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "9f70401b-bc0b-47a4-8d68-92234491ed1e",
+      "Name": "Tỉnh Lai Châu",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "6e481d8c-e3c8-4c77-8ba5-e42f099ddde6",
+      "Name": "Tỉnh Sơn La",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "dffc0a79-0b17-4a0d-965e-b8709556b291",
+      "Name": "Tỉnh Yên Bái",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "6b927ff9-0085-4db1-8ea1-9584006b379c",
+      "Name": "Tỉnh Hoà Bình",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "4ce3a05c-7167-4a46-8efb-243493a67a8e",
+      "Name": "Tỉnh Thái Nguyên",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "96ec2511-ffc2-4562-aace-849c97416546",
+      "Name": "Tỉnh Lạng Sơn",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "9859db8a-71d2-4649-814f-0e6ffeeda8c2",
+      "Name": "Tỉnh Quảng Ninh",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "95a9a8a8-3238-4470-b48a-cf3545269bb1",
+      "Name": "Tỉnh Bắc Giang",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "cfa332e6-5bc1-4859-b9db-d78e66d40057",
+      "Name": "Tỉnh Phú Thọ",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "ce1af43d-8ff1-4453-a8ec-24d4ea3aeed9",
+      "Name": "Tỉnh Vĩnh Phúc",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "f8195c36-2520-4710-947c-8baf9eace738",
+      "Name": "Tỉnh Bắc Ninh",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "35d6c118-1089-4028-ade6-086246210bf3",
+      "Name": "Tỉnh Hải Dương",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "aa04201d-b1de-4842-9840-94cb92330d7f",
+      "Name": "Thành phố Hải Phòng",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "27b26b03-d82e-4277-8265-7b01458dafd3",
+      "Name": "Tỉnh Hưng Yên",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "871ef070-5f61-4ae5-9740-448d2b4843fa",
+      "Name": "Tỉnh Thái Bình",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "92f88f9f-eb3c-48a2-a42a-efddd9388902",
+      "Name": "Tỉnh Hà Nam",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "95ca5b5b-506a-4695-84b7-75ccc47dc876",
+      "Name": "Tỉnh Nam Định",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "0085be51-0892-4e7a-8f65-f565ddbba3cc",
+      "Name": "Tỉnh Ninh Bình",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "793d4f4d-5746-4a63-8b84-48ef6017dd1d",
+      "Name": "Tỉnh Thanh Hóa",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "67d68ed2-b4d7-43df-a8f1-1bc4eaf7f70b",
+      "Name": "Tỉnh Nghệ An",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "46af5d6a-7ff7-48bf-a90a-75c17beec1a5",
+      "Name": "Tỉnh Hà Tĩnh",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "29fe03a5-3b03-4f6a-9f55-337f656e785b",
+      "Name": "Tỉnh Quảng Bình",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "a4ec81ed-9b8e-4631-b607-7e50cf5b2790",
+      "Name": "Tỉnh Quảng Trị",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "66c3f2f0-922f-491c-833c-5443abd92387",
+      "Name": "Tỉnh Thừa Thiên Huế",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "86fe2795-45b7-4b46-aef0-dda028a6399d",
+      "Name": "Thành phố Đà Nẵng",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "0e2d0858-6bb2-42dc-9ad2-a18676eb80a2",
+      "Name": "Tỉnh Quảng Nam",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "07c7be09-bd71-414b-9f17-dd5a60149058",
+      "Name": "Tỉnh Quảng Ngãi",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "c073a8df-0eb5-4b8f-a843-889af9fcff46",
+      "Name": "Tỉnh Bình Định",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "2320984c-a36d-45e5-aafd-56a3ad3c7294",
+      "Name": "Tỉnh Phú Yên",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "48438a12-289d-4c9a-b1c9-e89c6b007210",
+      "Name": "Tỉnh Khánh Hòa",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "3d16fd5a-074e-44a0-a19a-9c3d6ee6477a",
+      "Name": "Tỉnh Ninh Thuận",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "cab0d225-0f53-4d3c-90cc-2d3f1da17f71",
+      "Name": "Tỉnh Bình Thuận",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "624d4c10-3015-4fed-b726-8cda78d7edf9",
+      "Name": "Tỉnh Kon Tum",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "55403d5a-0611-4800-8a6e-9f9286a70098",
+      "Name": "Tỉnh Gia Lai",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "c800f32e-4925-4632-a579-bdd2dae792c0",
+      "Name": "Tỉnh Đắk Lắk",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "0d54c13e-c38b-46bb-af6d-384992a10121",
+      "Name": "Tỉnh Đắk Nông",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "65d2384d-8c11-41f0-89c6-cf9ca898875a",
+      "Name": "Tỉnh Lâm Đồng",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "66df9581-7256-44b1-a895-0b3bce04a037",
+      "Name": "Tỉnh Bình Phước",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "b5f9fff0-83e3-4471-b028-1816f6c715d3",
+      "Name": "Tỉnh Tây Ninh",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "4109ab22-374d-4322-9124-b3f9256577bc",
+      "Name": "Tỉnh Bình Dương",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "7b9afae2-7f19-410d-b40f-fc8e395230f0",
+      "Name": "Tỉnh Đồng Nai",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "b7f1c4e2-a340-42cd-a74f-c9f0c5ea8097",
+      "Name": "Tỉnh Bà Rịa - Vũng Tàu",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "6d0127fd-930f-4f29-bfd8-82138316beed",
+      "Name": "Thành phố Hồ Chí Minh",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "df09a8cd-b1e3-45ab-beb9-942740361379",
+      "Name": "Tỉnh Long An",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "89366e12-d22a-4464-bef7-2e1076115a90",
+      "Name": "Tỉnh Tiền Giang",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "65c746dd-16e0-49c7-833c-baca105194c0",
+      "Name": "Tỉnh Bến Tre",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "399bc72b-4271-47f2-9318-294c478b3611",
+      "Name": "Tỉnh Trà Vinh",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "55134558-1267-4529-99d0-09e7446099ae",
+      "Name": "Tỉnh Vĩnh Long",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "0f3e9f22-4c7a-4ca2-b28c-ac759de5684b",
+      "Name": "Tỉnh Đồng Tháp",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "efe7e8b7-187d-4c98-ab4c-fc2a108d039f",
+      "Name": "Tỉnh An Giang",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "d9bace4c-6c90-4a4f-8f0e-486a0a42586b",
+      "Name": "Tỉnh Kiên Giang",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "fe6ad592-f315-4e58-ab0d-fa27a7bc5e73",
+      "Name": "Thành phố Cần Thơ",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "148b4df6-f0e1-42b3-aa82-8a6da8342e5d",
+      "Name": "Tỉnh Hậu Giang",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "c5c2e78c-63f4-40f9-8347-e1fcc18cb5b9",
+      "Name": "Tỉnh Sóc Trăng",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "0d6a7941-19c2-47a6-9e99-32f1178d6f24",
+      "Name": "Tỉnh Bạc Liêu",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    },
+    {
+      "Id": "7699c3a6-cdda-47ca-975f-982a269d4f8e",
+      "Name": "Tỉnh Cà Mau",
+      "Country": {
+        "Id": "4ae1ebec-94b9-4764-aafe-39b9bfcd0046",
+        "Name": "Viet Nam",
+        "IsoCode": "VN"
+      },
+      "AdministrativeUnitType": {
+        "Id": "68b971c0-c8af-4f23-a51c-bc3914ceafae",
+        "Name": "Tỉnh/thành phố",
+        "Description": "Tỉnh hoặc thành phố trực thuộc trung ương"
+      }
+    }
+  ]
