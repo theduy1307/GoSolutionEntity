@@ -19,22 +19,15 @@ public class PoseidonDbContext : DbContext
     }
     
     public DbSet<Account> Accounts { get; set; }
-    public DbSet<AdministrativeUnit> AdministrativeUnits { get; set; }
-    public DbSet<AdministrativeUnitType> AdministrativeUnitTypes { get; set; }
-    public DbSet<ContactInformation> ContactInformations { get; set; }
-    public DbSet<Country> Countries { get; set; }
-    public DbSet<EducationLevel> EducationLevels { get; set; }
     public DbSet<Employee> Employees { get; set; }
-    public DbSet<Ethnicity> Ethnicities { get; set; }
-    public DbSet<PlaceOfIssueOfNationalIdentification> PlaceOfIssueOfNationalIdentifications { get; set; }
-    public DbSet<PlaceOfIssueOfPassport> PlaceOfIssueOfPassports { get; set; }
-    public DbSet<PoliticalQualification> PoliticalQualifications { get; set; }
-    public DbSet<Religion> Religions { get; set; }
-    public DbSet<Specialization> Specializations { get; set; }
-    
+    public DbSet<Schedule> Schedules { get; set; }
+    public DbSet<EmployeeSchedule>  EmployeeSchedules { get; set; }
+    public DbSet<Branch> Branches { get; set; }
+    public DbSet<Role> Roles { get; set; }
+    public DbSet<Right> Rights { get; set; }
+    public DbSet<RoleRight> RoleRights { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(modelBuilder);
         // Optional: Apply configurations here if needed
         // Seed data cho bảng Products
         // Thêm dữ liệu mẫu
@@ -45,5 +38,33 @@ public class PoseidonDbContext : DbContext
         // modelBuilder.Entity<Country>().HasData(countries);
         // modelBuilder.Entity<AdministrativeUnitType>().HasData(administrativeUnitTypes);
         // modelBuilder.Entity<AdministrativeUnit>().HasData(administrativeUnits);
+
+        modelBuilder.Entity<EmployeeSchedule>()
+            .HasKey(ews => new { ews.EmployeeId, ews.ScheduleId });
+
+        modelBuilder.Entity<EmployeeSchedule>()
+            .HasOne(ews => ews.Employee)
+            .WithMany(e => e.EmployeeSchedules)
+            .HasForeignKey(ews => ews.EmployeeId);
+
+        modelBuilder.Entity<EmployeeSchedule>()
+            .HasOne(ews => ews.Schedule)
+            .WithMany(ws => ws.EmployeeSchedules)
+            .HasForeignKey(ews => ews.ScheduleId);
+        base.OnModelCreating(modelBuilder);
+        
+        modelBuilder.Entity<RoleRight>()
+            .HasKey(rr => new { rr.RoleId, rr.RightId }); // Thiết lập khóa chính
+
+        modelBuilder.Entity<RoleRight>()
+            .HasOne(rr => rr.Role)
+            .WithMany(r => r.RoleRights)
+            .HasForeignKey(rr => rr.RoleId);
+
+        modelBuilder.Entity<RoleRight>()
+            .HasOne(rr => rr.Right)
+            .WithMany(r => r.RoleRights)
+            .HasForeignKey(rr => rr.RightId);
+
     }
 }
