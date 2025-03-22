@@ -6,14 +6,8 @@ namespace GoSolution.Entity.Entities;
 
 public class Employee : EntityBase
 {
-    [StringLength(100)]
-    public string FirstName { get; set; } = string.Empty;
-    
-    [StringLength(100)]
-    public string MiddleName { get; set; } = string.Empty;
-    
-    [StringLength(100)]
-    public string LastName { get; set; } = string.Empty;
+    [StringLength(400)]
+    public string FullName { get; set; } = string.Empty;
     
     [DataType(DataType.Date)]
     [Column(TypeName="Date")]
@@ -24,4 +18,6 @@ public class Employee : EntityBase
     public Account? Account { get; set; }
 
     public ICollection<EmployeeSchedule> EmployeeSchedules { get; set; } = [];
+    public ICollection<Role> Roles { get; set; } = [];
+
 }

@@ -10,8 +10,8 @@ public class Account : EntityBase
     public DateTime LastLogin { get; set; }
     [StringLength(50)]
     public string Username { get; set; } = string.Empty;
-    [StringLength(32)]
+    [StringLength(44)]
     public string Password { get; set; } = string.Empty;
-    [StringLength(5)]
+    [StringLength(24)]
     public string Salt { get; set; } = string.Empty;
 }

@@ -7,15 +7,11 @@ namespace GoSolution.Entity;
 
 public class PoseidonDbContext : DbContext
 {
+    public PoseidonDbContext(DbContextOptions<PoseidonDbContext> options) 
+        : base(options) { }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        // Load configuration from appsettings.json
-        var configuration = new ConfigurationBuilder()
-            .SetBasePath(Directory.GetCurrentDirectory())
-            .AddJsonFile("appsettings.json")
-            .Build();
-        var connectionString = configuration.GetConnectionString("DefaultConnection");
-         optionsBuilder.UseNpgsql("Host=localhost,5432; Database=Poseidon;Username=postgres;Password=P@ssw0rd&user=nimda-repus");
+        optionsBuilder.UseNpgsql("Host=localhost,5432; Database=Poseidon;Username=postgres;Password=P@ssw0rd&user=nimda-repus");
     }
     
     public DbSet<Account> Accounts { get; set; }
@@ -26,19 +22,15 @@ public class PoseidonDbContext : DbContext
     public DbSet<Role> Roles { get; set; }
     public DbSet<Right> Rights { get; set; }
     public DbSet<RoleRight> RoleRights { get; set; }
+    public DbSet<Menu> Menus { get; set; }
+    public DbSet<Candidate> Candidates { get; set; }
+    public DbSet<EducationHistory> CandidateEducations { get; set; }
+    public DbSet<Certificate> Certificates { get; set; }
+    public DbSet<CandidateCertificate> EmployeeCertificates { get; set; }
+    public DbSet<JobHistory> JobHistories { get; set; }
+    public DbSet<RecruitmentCampaign> RecruimentCampaigns { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        // Optional: Apply configurations here if needed
-        // Seed data cho bảng Products
-        // Thêm dữ liệu mẫu
-        // var countries = JsonSerializer.Deserialize<List<Country>>(Path.Combine("Common", "SeedData", "countries.json")) ?? [];
-        // var administrativeUnitTypes = JsonSerializer.Deserialize<List<AdministrativeUnitType>>(Path.Combine("Common", "SeedData", "administrativeUnitTypes.json")) ?? [];
-        // var administrativeUnits = JsonSerializer.Deserialize<List<AdministrativeUnit>>(Path.Combine("Common", "SeedData", "administrativeUnits.json")) ?? [];
-        //
-        // modelBuilder.Entity<Country>().HasData(countries);
-        // modelBuilder.Entity<AdministrativeUnitType>().HasData(administrativeUnitTypes);
-        // modelBuilder.Entity<AdministrativeUnit>().HasData(administrativeUnits);
-
         modelBuilder.Entity<EmployeeSchedule>()
             .HasKey(ews => new { ews.EmployeeId, ews.ScheduleId });
 
@@ -55,16 +47,48 @@ public class PoseidonDbContext : DbContext
         
         modelBuilder.Entity<RoleRight>()
             .HasKey(rr => new { rr.RoleId, rr.RightId }); // Thiết lập khóa chính
-
+        
         modelBuilder.Entity<RoleRight>()
             .HasOne(rr => rr.Role)
             .WithMany(r => r.RoleRights)
             .HasForeignKey(rr => rr.RoleId);
-
+        
         modelBuilder.Entity<RoleRight>()
             .HasOne(rr => rr.Right)
             .WithMany(r => r.RoleRights)
             .HasForeignKey(rr => rr.RightId);
+        
+        modelBuilder.Entity<Menu>()
+            .HasOne(m => m.Parent)
+            .WithMany(m => m.SubMenus)
+            .HasForeignKey(m => m.ParentId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<CandidateCertificate>()
+            .HasKey(cc => new { cc.CandidateId, cc.CertificateId });
+        
+        modelBuilder.Entity<CandidateCertificate>()
+            .HasOne(cc => cc.Candidate)
+            .WithMany(c => c.CandidateCertificates)
+            .HasForeignKey(cc => cc.CandidateId);
+
+        modelBuilder.Entity<CandidateCertificate>()
+            .HasOne(cc => cc.Certificate)
+            .WithMany(c => c.CandidateCertificates)
+            .HasForeignKey(cc => cc.CertificateId);
+        
+        modelBuilder.Entity<RecruitmentCampaignCertificate>()
+            .HasKey(cc => new { cc.RecruitmentCampaignId, cc.CertificateId });
+        
+        modelBuilder.Entity<RecruitmentCampaignCertificate>()
+            .HasOne(cc => cc.RecruitmentCampaign)
+            .WithMany(c => c.RecruitmentCampaignCertificates)
+            .HasForeignKey(cc => cc.RecruitmentCampaignId);
+
+        modelBuilder.Entity<RecruitmentCampaignCertificate>()
+            .HasOne(cc => cc.Certificate)
+            .WithMany(c => c.RecruitmentCampaignCertificates)
+            .HasForeignKey(cc => cc.CertificateId);
 
     }
 }
