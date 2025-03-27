@@ -7,7 +7,7 @@ public class Account : EntityBase
     public Guid EmployeeId { get; set; }
     public Employee Employee { get; set; } = new Employee();
     public bool IsActive { get; set; }
-    public DateTime LastLogin { get; set; }
+    public DateTime? LastLogin { get; set; }
     [StringLength(50)]
     public string Username { get; set; } = string.Empty;
     [StringLength(44)]

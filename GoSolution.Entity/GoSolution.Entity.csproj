@@ -5,7 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PackageId>GoSolution.HRM.Entity</PackageId>
-        <Version>2.0.2</Version>
+        <Version>2.0.5</Version>
         <Authors>Tran The Duy</Authors>
         <Product>GoHRM Entity Model</Product>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>

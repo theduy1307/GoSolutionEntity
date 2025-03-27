@@ -14,9 +14,9 @@ public class Employee : EntityBase
     public DateTime DateOfBirth { get; set; }
     
     public byte Gender { get; set; }
-    
     public Account? Account { get; set; }
-
+    public Guid? BranchId { get; set; }
+    public Branch Branch { get; set; } = new Branch();
     public ICollection<EmployeeSchedule> EmployeeSchedules { get; set; } = [];
     public ICollection<Role> Roles { get; set; } = [];
 
