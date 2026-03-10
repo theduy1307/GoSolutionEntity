@@ -23,12 +23,6 @@ public class PoseidonDbContext : DbContext
     public DbSet<Right> Rights { get; set; }
     public DbSet<RoleRight> RoleRights { get; set; }
     public DbSet<Menu> Menus { get; set; }
-    public DbSet<Candidate> Candidates { get; set; }
-    public DbSet<EducationHistory> CandidateEducations { get; set; }
-    public DbSet<Certificate> Certificates { get; set; }
-    public DbSet<CandidateCertificate> EmployeeCertificates { get; set; }
-    public DbSet<JobHistory> JobHistories { get; set; }
-    public DbSet<RecruitmentCampaign> RecruimentCampaigns { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<EmployeeSchedule>()
@@ -43,20 +37,17 @@ public class PoseidonDbContext : DbContext
             .HasOne(ews => ews.Schedule)
             .WithMany(ws => ws.EmployeeSchedules)
             .HasForeignKey(ews => ews.ScheduleId);
+        
+        modelBuilder.Entity<RoleRight>()
+            .HasKey(rr => new { rr.RoleId, rr.RightId });
+        
+        modelBuilder.Entity<EmployeeRole>()
+            .HasKey(er => new { er.RoleId, er.EmployeeId });
+        
+        modelBuilder.Entity<MenuRole>()
+            .HasKey(mr => new { mr.RoleId, mr.MenuId });
+        
         base.OnModelCreating(modelBuilder);
-        
-        modelBuilder.Entity<RoleRight>()
-            .HasKey(rr => new { rr.RoleId, rr.RightId }); // Thiết lập khóa chính
-        
-        modelBuilder.Entity<RoleRight>()
-            .HasOne(rr => rr.Role)
-            .WithMany(r => r.RoleRights)
-            .HasForeignKey(rr => rr.RoleId);
-        
-        modelBuilder.Entity<RoleRight>()
-            .HasOne(rr => rr.Right)
-            .WithMany(r => r.RoleRights)
-            .HasForeignKey(rr => rr.RightId);
         
         modelBuilder.Entity<Menu>()
             .HasOne(m => m.Parent)
@@ -64,31 +55,45 @@ public class PoseidonDbContext : DbContext
             .HasForeignKey(m => m.ParentId)
             .OnDelete(DeleteBehavior.Restrict);
 
-        modelBuilder.Entity<CandidateCertificate>()
-            .HasKey(cc => new { cc.CandidateId, cc.CertificateId });
+        // Seeding datas
+        modelBuilder.Entity<Right>().HasData(
+            new Right() { Id = 1, Name = "Create employee and account" },
+            new Right() { Id = 2, Name = "Create schedule" },
+            new Right() { Id = 3, Name = "Create employee scheduling" });
         
-        modelBuilder.Entity<CandidateCertificate>()
-            .HasOne(cc => cc.Candidate)
-            .WithMany(c => c.CandidateCertificates)
-            .HasForeignKey(cc => cc.CandidateId);
+        modelBuilder.Entity<Role>().HasData(
+            new Role() { Id = 1, Name = "Admin" },
+            new Role() { Id = 2, Name = "Manager" },
+            new Role() { Id = 3, Name = "Member" });
 
-        modelBuilder.Entity<CandidateCertificate>()
-            .HasOne(cc => cc.Certificate)
-            .WithMany(c => c.CandidateCertificates)
-            .HasForeignKey(cc => cc.CertificateId);
-        
-        modelBuilder.Entity<RecruitmentCampaignCertificate>()
-            .HasKey(cc => new { cc.RecruitmentCampaignId, cc.CertificateId });
-        
-        modelBuilder.Entity<RecruitmentCampaignCertificate>()
-            .HasOne(cc => cc.RecruitmentCampaign)
-            .WithMany(c => c.RecruitmentCampaignCertificates)
-            .HasForeignKey(cc => cc.RecruitmentCampaignId);
-
-        modelBuilder.Entity<RecruitmentCampaignCertificate>()
-            .HasOne(cc => cc.Certificate)
-            .WithMany(c => c.RecruitmentCampaignCertificates)
-            .HasForeignKey(cc => cc.CertificateId);
-
+        modelBuilder.Entity<RoleRight>().HasData(
+            new RoleRight() { RoleId = 1, RightId = 1 },
+            new RoleRight() { RoleId = 1, RightId = 2 },
+            new RoleRight() { RoleId = 1, RightId = 3 },
+            new RoleRight() { RoleId = 2, RightId = 2 },
+            new RoleRight() { RoleId = 2, RightId = 3 });
+        modelBuilder.Entity<Employee>().HasData(
+            new Employee()
+            {
+                Id = 1,
+                FirstName = "TRAN",
+                LastName = "The Duy",
+                DateOfBirth = new DateOnly(1998, 7, 13),
+                Gender = 1,
+            });
+        modelBuilder.Entity<EmployeeRole>().HasData(
+            new EmployeeRole()
+            {
+                EmployeeId = 1,
+                RoleId = 1
+            });
+        var humanResourceId = 1;
+        modelBuilder.Entity<Menu>().HasData(
+            new Menu() { Id = humanResourceId, Name = "Human resource", Icon = "manage_accounts" });
+        modelBuilder.Entity<Menu>().HasData(
+            new Menu() { Id = 2, Name = "Schedule", Icon = "schedule", ParentId = humanResourceId });
+        modelBuilder.Entity<MenuRole>().HasData(
+            new MenuRole() { MenuId = 1, RoleId = 1 },
+            new MenuRole() { MenuId = 2, RoleId = 1 });
     }
 }

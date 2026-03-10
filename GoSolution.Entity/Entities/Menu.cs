@@ -9,8 +9,8 @@ public class Menu : EntityBase
     public string Name { get; set; } = string.Empty;
     public string? Icon { get; set; } = string.Empty;
     public string? Url { get; set; }
-    public Guid? ParentId { get; set; }
-    public Menu? Parent { get; set; }
+    public int? ParentId { get; set; }
+    public Menu? Parent { get; set; } =  null!;
     public ICollection<Menu>? SubMenus { get; set; }
-    public ICollection<Role> Roles { get; set; }
+    public ICollection<MenuRole> MenuRoles { get; set; } = [];
 }

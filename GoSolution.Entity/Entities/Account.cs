@@ -4,7 +4,7 @@ namespace GoSolution.Entity.Entities;
 
 public class Account : EntityBase
 {
-    public Guid EmployeeId { get; set; }
+    public int EmployeeId { get; set; }
     public Employee Employee { get; set; } = new Employee();
     public bool IsActive { get; set; }
     public DateTime? LastLogin { get; set; }
