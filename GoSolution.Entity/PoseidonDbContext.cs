@@ -57,6 +57,31 @@ public class PoseidonDbContext : DbContext
             .OnDelete(DeleteBehavior.Restrict);
 
         // Seeding datas
+        var employeeId = 1;
+        modelBuilder.Entity<Employee>().HasData(
+            new Employee
+            {
+                Id = employeeId, 
+                FirstName = "TRAN", 
+                LastName = "The Duy",
+                DateOfBirth = new DateOnly(1998, 7, 13),
+                CreateDate = DateTime.UtcNow,
+                CreatedBy = 1,
+            }
+        );
+        modelBuilder.Entity<Account>().HasData(
+            new Account
+            {
+                Id = 1, 
+                EmployeeId = employeeId,
+                Username = "tran.theduy", 
+                Password = "ZSj61OnHWu2M2z18w2x+nZuczHNSaw07SlOQQDfkioE=",
+                Salt = "mCwnlqAepUBDxyJ2z3FnYC2z",
+                IsActive = true,
+                CreateDate = DateTime.UtcNow,
+                CreatedBy = 1,
+            }
+        );
         modelBuilder.Entity<Right>().HasData(
             new Right() { Id = 1, Name = "Create employee and account" },
             new Right() { Id = 2, Name = "Create schedule" },
@@ -73,19 +98,11 @@ public class PoseidonDbContext : DbContext
             new RoleRight() { RoleId = 1, RightId = 3 },
             new RoleRight() { RoleId = 2, RightId = 2 },
             new RoleRight() { RoleId = 2, RightId = 3 });
-        modelBuilder.Entity<Employee>().HasData(
-            new Employee()
-            {
-                Id = 1,
-                FirstName = "TRAN",
-                LastName = "The Duy",
-                DateOfBirth = new DateOnly(1998, 7, 13),
-                Gender = 1,
-            });
+        
         modelBuilder.Entity<EmployeeRole>().HasData(
             new EmployeeRole()
             {
-                EmployeeId = 1,
+                EmployeeId = employeeId,
                 RoleId = 1
             });
         var humanResourceId = 1;
