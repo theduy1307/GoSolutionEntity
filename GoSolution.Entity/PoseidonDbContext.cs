@@ -23,6 +23,7 @@ public class PoseidonDbContext : DbContext
     public DbSet<Right> Rights { get; set; }
     public DbSet<RoleRight> RoleRights { get; set; }
     public DbSet<Menu> Menus { get; set; }
+    public DbSet<MenuRole> MenuRoles { get; set; }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<EmployeeSchedule>()
