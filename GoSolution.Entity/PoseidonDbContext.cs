@@ -64,6 +64,7 @@ public class PoseidonDbContext : DbContext
                 Id = employeeId, 
                 FirstName = "TRAN", 
                 LastName = "The Duy",
+                Email = "tran.theduy@gmail.com",
                 DateOfBirth = new DateOnly(1998, 7, 13),
                 CreateDate = DateTime.UtcNow,
                 CreatedBy = 1,

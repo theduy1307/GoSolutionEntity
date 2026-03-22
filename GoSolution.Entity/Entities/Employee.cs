@@ -12,6 +12,9 @@ public class Employee : EntityBase
     [StringLength(200)]
     public string LastName { get; set; } = string.Empty;
     
+    [StringLength(200)]
+    public string Email { get; set; } = string.Empty;
+    
     [DataType(DataType.Date)]
     [Column(TypeName="Date")]
     public DateOnly DateOfBirth { get; set; }
