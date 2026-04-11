@@ -1,7 +1,5 @@
-using System.Text.Json;
 using GoSolution.Entity.Entities;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace GoSolution.Entity;
 
@@ -11,7 +9,7 @@ public class PoseidonDbContext : DbContext
         : base(options) { }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseNpgsql("Host=localhost,5432; Database=Poseidon;Username=postgres;Password=P@ssw0rd&user=nimda-repus");
+        optionsBuilder.UseSqlServer("Server=localhost,1433;Database=Poseidon;User Id=sa;Password=P@ssw0rd&user=nimda-repus;TrustServerCertificate=True");
     }
     
     public DbSet<Account> Accounts { get; set; }
@@ -110,7 +108,7 @@ public class PoseidonDbContext : DbContext
         modelBuilder.Entity<Menu>().HasData(
             new Menu() { Id = humanResourceId, Name = "Human resource", Icon = "manage_accounts" });
         modelBuilder.Entity<Menu>().HasData(
-            new Menu() { Id = 2, Name = "Schedule", Icon = "schedule", ParentId = humanResourceId });
+            new Menu() { Id = 2, Name = "Schedule", Icon = "schedule", ParentId = humanResourceId, Url = "schedule"});
         modelBuilder.Entity<MenuRole>().HasData(
             new MenuRole() { MenuId = 1, RoleId = 1 },
             new MenuRole() { MenuId = 2, RoleId = 1 });
