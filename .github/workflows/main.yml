@@ -1,0 +1,43 @@
+name: Deploy GoSolution.Entity to NuGet
+
+on:
+  push:
+    branches:
+      - main  # Trigger workflow on push to the main branch
+    paths:
+      - 'GoSolutionEntity/GoSolution.Entity/**' # Only run if changes occur in this project folder
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore GoSolutionEntity/GoSolution.Entity/GoSolution.Entity.csproj
+
+    - name: Build project
+      run: dotnet build GoSolutionEntity/GoSolution.Entity/GoSolution.Entity.csproj --configuration Release --no-restore
+
+    # Automatically generate version based on GitHub Run Number (e.g., 1.0.1, 1.0.2...)
+    - name: Pack NuGet package
+      run: |
+        dotnet pack GoSolutionEntity/GoSolution.Entity/GoSolution.Entity.csproj \
+        --configuration Release \
+        --no-build \
+        --output ./dist \
+        -p:PackageVersion=1.0.${{ github.run_number }}
+
+    - name: Publish to NuGet.org
+      run: |
+        dotnet nuget push ./dist/*.nupkg \
+        --api-key ${{ secrets.NUGET_API_KEY }} \
+        --source https://api.nuget.org/v3/index.json \
+        --skip-duplicate
