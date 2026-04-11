@@ -19,15 +19,15 @@ jobs:
         dotnet-version: '8.0.x'
 
     - name: Restore dependencies
-      run: dotnet restore GoSolutionEntity/GoSolution.Entity/GoSolution.Entity.csproj
+      run: dotnet restore GoSolution.Entity/GoSolution.Entity.csproj
 
     - name: Build project
-      run: dotnet build GoSolutionEntity/GoSolution.Entity/GoSolution.Entity.csproj --configuration Release --no-restore
+      run: dotnet build GoSolution.Entity/GoSolution.Entity.csproj --configuration Release --no-restore
 
     # Automatically generate version based on GitHub Run Number (e.g., 1.0.1, 1.0.2...)
     - name: Pack NuGet package
       run: |
-        dotnet pack GoSolutionEntity/GoSolution.Entity/GoSolution.Entity.csproj \
+        dotnet pack GoSolution.Entity/GoSolution.Entity.csproj \
         --configuration Release \
         --no-build \
         --output ./dist \
